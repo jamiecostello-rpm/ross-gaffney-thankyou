@@ -1,0 +1,5 @@
+# Unused — hero now plays from Vimeo, so this 39MB Loom file is not deployed
+assets/thank-you-video.mp4
+
+# macOS
+.DS_Store

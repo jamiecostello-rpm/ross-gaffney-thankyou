@@ -1,0 +1,128 @@
+/* ======================================================================
+   ROSS GAFFNEY COACHING — THANK-YOU PAGE
+   Additions on top of styles.css (same dark + light-blue theme)
+   ====================================================================== */
+
+/* ---------- Native video (replaces the placeholder div) ---------- */
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+
+/* ---------- Responsive Vimeo embed (16:9) ---------- */
+.vimeo-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.vimeo-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------- Status badge (orange "not confirmed yet" — drives form completion) ---------- */
+.confirm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: rgba(255, 140, 66, 0.1);
+  border: 1px solid rgba(255, 140, 66, 0.4);
+  border-radius: 999px;
+  padding: 0.45em 1.3em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ff9f45;
+  margin-bottom: var(--space-lg);
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+.confirm-badge svg {
+  width: 16px;
+  height: 16px;
+  stroke: #ff9f45;
+}
+
+/* ---------- Pre-call form section (the required step) ---------- */
+.form-section {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(61, 180, 242, 0.08) 0%, transparent 55%),
+    var(--bg-primary);
+  scroll-margin-top: 80px;
+}
+
+/* highlight callout above the form */
+.callout {
+  max-width: 720px;
+  margin: 0 auto var(--space-xl);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: var(--radius);
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.callout strong { color: var(--text-primary); }
+
+/* the embedded GHL survey */
+.form-embed-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-blue);
+  padding: var(--space-md);
+  overflow: hidden;
+}
+
+.form-embed-card iframe {
+  width: 100%;
+  min-height: 720px;
+  border: none;
+  border-radius: var(--radius);
+  display: block;
+}
+
+/* ---------- Single wide testimonial video ---------- */
+.single-video {
+  max-width: 760px;
+  margin: var(--space-xl) auto 0;
+}
+
+/* ---------- Prep / what-to-expect step cards (icon variant) ---------- */
+.prep-card .step-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-md);
+  border-radius: 50%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prep-card .step-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: var(--accent-blue);
+  fill: none;
+  stroke-width: 1.8;
+}
+
+/* ---------- Final reminder banner ---------- */
+.final-reminder {
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(61, 180, 242, 0.06) 0%, transparent 55%),
+    var(--bg-secondary);
+}
